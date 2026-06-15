@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINGUA — Pagamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LINGU<span>A</span></a>
+      <a href="cadastro.html" class="header-profile" aria-label="Minha Conta">
+        <span class="profile-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+        </span>
+        Minha&nbsp;Conta
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== CONTEÚDO ========== -->
+  <section class="page-section">
+    <div class="container pay-wrapper">
+      <h1 class="page-title">Pagamento</h1>
+      <p class="page-subtitle">Insira os dados do seu cartão de crédito para finalizar a compra.</p>
+
+      <!-- Visual do Cartão -->
+      <div class="credit-card-visual">
+        <div class="card-chip"></div>
+        <div class="card-number-display">•••• &nbsp; •••• &nbsp; •••• &nbsp; ••••</div>
+        <div class="card-bottom">
+          <div class="card-name-display">SEU NOME AQUI</div>
+          <div class="card-exp-display">MM/AA</div>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="form-card">
+        <form action="index.html" method="get">
+
+          <div class="form-group">
+            <label for="card-number">Número do Cartão</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              placeholder="0000 0000 0000 0000"
+              maxlength="19"
+              inputmode="numeric"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="card-name">Nome Impresso no Cartão</label>
+            <input
+              type="text"
+              id="card-name"
+              name="card-name"
+              placeholder="Como está no cartão"
+              required
+            >
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="card-exp">Validade (MM/AA)</label>
+              <input
+                type="text"
+                id="card-exp"
+                name="card-exp"
+                placeholder="MM/AA"
+                maxlength="5"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="card-cvv">CVV</label>
+              <input
+                type="text"
+                id="card-cvv"
+                name="card-cvv"
+                placeholder="•••"
+                maxlength="4"
+                inputmode="numeric"
+                required
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:.8rem;">
+            Finalizar Compra
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 <span>LINGUA</span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

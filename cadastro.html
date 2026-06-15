@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINGUA — Conta &amp; Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LINGU<span>A</span></a>
+      <a href="cadastro.html" class="header-profile" aria-label="Minha Conta">
+        <span class="profile-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+        </span>
+        Minha&nbsp;Conta
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== CONTEÚDO ========== -->
+  <section class="page-section">
+    <div class="container">
+      <h1 class="page-title">Minha Conta</h1>
+      <p class="page-subtitle">Crie sua conta para acompanhar seus pedidos ou faça login se já é cliente.</p>
+
+      <div class="auth-grid">
+
+        <!-- ===== CRIAR CONTA ===== -->
+        <div class="auth-block">
+          <h2>Criar Conta</h2>
+          <p class="auth-sub">Preencha os campos abaixo para se cadastrar.</p>
+
+          <form action="index.html" method="get">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg-nome">Nome</label>
+                <input type="text" id="reg-nome" name="nome" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="reg-sobrenome">Sobrenome</label>
+                <input type="text" id="reg-sobrenome" name="sobrenome" placeholder="Seu sobrenome" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-email">E-mail</label>
+              <input type="email" id="reg-email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-telefone">Telefone</label>
+              <input type="tel" id="reg-telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="reg-endereco">Endereço</label>
+              <input type="text" id="reg-endereco" name="endereco" placeholder="Rua, número, cidade – UF">
+            </div>
+
+            <div class="form-group">
+              <label for="reg-senha">Senha</label>
+              <input type="password" id="reg-senha" name="senha" placeholder="Crie uma senha forte" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+          </form>
+        </div>
+
+        <!-- ===== LOGIN ===== -->
+        <div class="auth-block">
+          <h2>Entrar</h2>
+          <p class="auth-sub">Já possui uma conta? Faça login abaixo.</p>
+
+          <form action="index.html" method="get">
+            <div class="form-group">
+              <label for="login-user">Nome de Usuário</label>
+              <input type="text" id="login-user" name="username" placeholder="Seu nome de usuário" required>
+            </div>
+
+            <div class="form-group">
+              <label for="login-pass">Senha</label>
+              <input type="password" id="login-pass" name="password" placeholder="Sua senha" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </form>
+
+          <p style="margin-top:1.2rem;text-align:center;font-size:.82rem;color:var(--light-gray);">
+            Esqueceu a senha? <a href="#" style="color:var(--blue-accent);">Recuperar acesso</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 <span>LINGUA</span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
